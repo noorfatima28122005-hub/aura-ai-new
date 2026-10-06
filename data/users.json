@@ -1,0 +1,114 @@
+[
+  {
+    "id": "usr_workingbynoor_gmail_com",
+    "email": "workingbynoor@gmail.com",
+    "salt": "12bf2866112370a26944aeaa8ab60f0c",
+    "passwordHash": "92e8b4aca1552542c2827e8368e473be73061a2c5a190e1226b1ce5113e9ad9cfc2e087105646407c6ef835ec81cc28a179d0787a82ca7218954c98b6d154715",
+    "name": "Noor A.",
+    "companyName": "Aura Studio Operations",
+    "role": "Managing Director & Founder",
+    "businessDomain": "Digital Solutions & Consulting",
+    "teamSize": "1-5 specialists",
+    "primaryServices": [
+      "AI Strategy & Development",
+      "Web & UI/UX Systems"
+    ],
+    "averageProjectValue": "$2,500 - $10,000",
+    "aiAssistanceLevel": "autonomous_with_approval",
+    "createdAt": "2026-09-23T15:15:16.147Z"
+  },
+  {
+    "id": "usr_rayan_aurastudio_io",
+    "email": "rayan@aurastudio.io",
+    "salt": "9663d9ab9eb140c3aa4b7309a1dc66bb",
+    "passwordHash": "f5b1a461d259a2f5ad1e91dd05ec2ba4c0fa1ad7a0493cc8ef3f4a0970328568a893c9e6717165dd2e346eee6018f43616788e36bf5efcf2f283b0dda719f8b6",
+    "name": "Rayan Ahmed",
+    "companyName": "Aura Studio & Agency",
+    "role": "Founder & Principal",
+    "businessDomain": "Design & Software Engineering",
+    "teamSize": "1-5 specialists",
+    "primaryServices": [
+      "AI Operating Systems",
+      "Enterprise UX Architecture"
+    ],
+    "averageProjectValue": "$5,000 - $15,000",
+    "aiAssistanceLevel": "autonomous_with_approval",
+    "createdAt": "2026-09-23T15:15:16.155Z"
+  },
+  {
+    "id": "usr_1790178190627_rl144",
+    "email": "testuser99@aura.ai",
+    "passwordHash": "4fee06f2972598e3ad10bc14fcca0622c54a06f5a9e3ebd71105b207c2016226adbbc5b8e28d88f4d129f0335a83d5b55b961bc568aeda69248be042cc11c85e",
+    "salt": "4b105d21edc03387745215dded5bd99c",
+    "name": "Test User",
+    "companyName": "Test Studio",
+    "role": "Managing Director",
+    "businessDomain": "Digital Consulting & Solutions",
+    "teamSize": "1-5 specialists",
+    "primaryServices": [
+      "AI Strategy & Development"
+    ],
+    "averageProjectValue": "$2,500 - $10,000",
+    "aiAssistanceLevel": "autonomous_with_approval",
+    "workspaceType": "Freelancer",
+    "accountType": "Freelancer",
+    "createdAt": "2026-09-23T15:43:10.627Z"
+  },
+  {
+    "id": "usr_1790178658925_3yt6h",
+    "email": "test_director@aurabiz.io",
+    "passwordHash": "d038e80e15f2bec20469dd032118966d22a746e0cc21f7706f4084ff68649fbd5dce9706c0bb6f9f560699653039d75432deaad16cb98d35aead059ef3787bc1",
+    "salt": "efb5683f3859f15d5ff08a6eaf06ade8",
+    "name": "Alex Mercer",
+    "companyName": "Mercer Ventures",
+    "role": "Managing Director",
+    "businessDomain": "Digital Consulting & Solutions",
+    "teamSize": "1-5 specialists",
+    "primaryServices": [
+      "AI Strategy & Development"
+    ],
+    "averageProjectValue": "$2,500 - $10,000",
+    "aiAssistanceLevel": "autonomous_with_approval",
+    "workspaceType": "Freelancer",
+    "accountType": "Freelancer",
+    "createdAt": "2026-09-23T15:50:58.925Z"
+  },
+  {
+    "id": "usr_1790179024819_myd47",
+    "email": "test_member_1790179024@aurabiz.io",
+    "passwordHash": "a5950223a2a7f025ada006b9f22849a0f0fc8708f663cd3a0bc57d9e766407f6020919efe0062cfae7e8899b7c475f6ff4ad65f5c49ac3b80e16b073539e8d85",
+    "salt": "43617ae47c61b772bfa87bc7b3c5770d",
+    "name": "Sarah Lee",
+    "companyName": "Lee Design Co",
+    "role": "Managing Director",
+    "businessDomain": "Digital Consulting & Solutions",
+    "teamSize": "1-5 specialists",
+    "primaryServices": [
+      "AI Strategy & Development"
+    ],
+    "averageProjectValue": "$2,500 - $10,000",
+    "aiAssistanceLevel": "autonomous_with_approval",
+    "workspaceType": "Freelancer",
+    "accountType": "Freelancer",
+    "createdAt": "2026-09-23T15:57:04.819Z"
+  },
+  {
+    "id": "usr_1790179366911_lo24b",
+    "email": "frontend_test_1790179366@example.com",
+    "passwordHash": "e9d1477181e2e568e0943d73f86c9b79661aadecb8bb5405db3eff5fa3a7809494afccb72f42823f071c64c9571f502baabde627c3b19dfe5f4120328d90f5c2",
+    "salt": "f0d7835c50cf6a56b949c4e17121ae8c",
+    "name": "Frontend Test",
+    "companyName": "Aura Studio Operations",
+    "role": "Managing Director",
+    "businessDomain": "Digital Consulting & Solutions",
+    "teamSize": "1-5 specialists",
+    "primaryServices": [
+      "AI Strategy & Development"
+    ],
+    "averageProjectValue": "$2,500 - $10,000",
+    "aiAssistanceLevel": "autonomous_with_approval",
+    "workspaceType": "Freelancer",
+    "accountType": "Freelancer",
+    "createdAt": "2026-09-23T16:02:46.911Z"
+  }
+]

@@ -1,0 +1,334 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #05070d;
+    --bg-secondary: #080b14;
+    --bg-elevated: #0d1220;
+    --bg-card: #111827;
+    --bg-surface: #151b2b;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-accent: rgba(99, 102, 241, 0.25);
+  }
+
+  body {
+    background-color: #05070d;
+    color: #f3f4f6;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Manrope', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080b14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f293d;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Aura Glow & Gradient utilities */
+.aura-glow-subtle {
+  box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.15), 0 0 15px -3px rgba(139, 92, 246, 0.1);
+}
+
+.aura-glow-accent {
+  box-shadow: 0 0 35px -5px rgba(99, 102, 241, 0.25), 0 0 20px -3px rgba(217, 70, 239, 0.15);
+}
+
+.aura-card {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.aura-card-interactive {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aura-card-interactive:hover {
+  background: rgba(21, 27, 43, 0.85);
+  border-color: rgba(99, 102, 241, 0.25);
+  transform: translateY(-1px);
+}
+
+.aura-gradient-text {
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aura-gradient-btn {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 55%, #db2777 100%);
+  transition: all 0.25s ease;
+}
+
+.aura-gradient-btn:hover {
+  opacity: 0.94;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Periodic glowing border animation for primary floating voice orb (Idle) */
+@keyframes voice-orb-border-glow {
+  0%, 100% {
+    border-color: rgba(6, 182, 212, 0.45);
+    box-shadow: 0 0 0 1px rgba(6, 182, 212, 0.35),
+                0 0 10px rgba(6, 182, 212, 0.3),
+                0 10px 25px -5px rgba(6, 182, 212, 0.35);
+  }
+  50% {
+    border-color: rgba(168, 85, 247, 0.75);
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.25),
+                0 0 18px 2px rgba(168, 85, 247, 0.45),
+                0 14px 28px -4px rgba(147, 51, 234, 0.45);
+  }
+}
+
+/* Intensified periodic glowing border animation when microphone is active */
+@keyframes voice-orb-border-glow-active {
+  0%, 100% {
+    border-color: rgba(34, 211, 238, 0.95);
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.75),
+                0 0 20px 4px rgba(6, 182, 212, 0.8),
+                0 0 35px 8px rgba(99, 102, 241, 0.55),
+                inset 0 0 12px rgba(34, 211, 238, 0.45);
+  }
+  50% {
+    border-color: rgba(236, 72, 153, 0.95);
+    box-shadow: 0 0 0 5px rgba(236, 72, 153, 0.65),
+                0 0 28px 7px rgba(236, 72, 153, 0.85),
+                0 0 45px 12px rgba(147, 51, 234, 0.65),
+                inset 0 0 16px rgba(236, 72, 153, 0.55);
+  }
+}
+
+#btn-floating-voice-orb {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border: 1.5px solid rgba(6, 182, 212, 0.45);
+  animation: voice-orb-border-glow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* Intensified glowing border when microphone is active */
+#btn-floating-voice-orb.mic-active,
+#btn-floating-voice-orb.is-mic-active,
+#btn-floating-voice-orb[data-mic-active="true"] {
+  border-color: rgba(34, 211, 238, 0.95) !important;
+  animation: voice-orb-border-glow-active 1.25s ease-in-out infinite !important;
+}
+
+#btn-floating-voice-orb.mic-active:hover,
+#btn-floating-voice-orb.is-mic-active:hover,
+#btn-floating-voice-orb[data-mic-active="true"]:hover {
+  animation-play-state: running !important;
+}
+
+/* Expand smoothly from 48px to 182px on mouse hover, revealing 'Talk to AURA' */
+#btn-floating-voice-orb:hover {
+  width: 182px;
+  animation-play-state: paused;
+  transform: scale(1.02);
+}
+
+#btn-floating-voice-orb:active {
+  animation-play-state: paused;
+  transform: scale(0.96);
+}
+
+/* Internal label and kbd badge transitions */
+#btn-floating-voice-orb .voice-orb-label {
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.05s, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+}
+
+#btn-floating-voice-orb .voice-orb-kbd {
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0.08s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0.08s;
+}
+
+#btn-floating-voice-orb:hover .voice-orb-label,
+#btn-floating-voice-orb:hover .voice-orb-kbd {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animated soundwave bars for voice input */
+@keyframes aura-voice-bar {
+  0%, 100% {
+    height: 4px;
+  }
+  50% {
+    height: 14px;
+  }
+}
+
+.voice-wave-bar {
+  width: 2.5px;
+  background-color: #22d3ee;
+  border-radius: 9999px;
+  animation: aura-voice-bar 0.75s ease-in-out infinite;
+}
+
+.voice-wave-bar:nth-child(2) {
+  animation-delay: 0.18s;
+}
+
+.voice-wave-bar:nth-child(3) {
+  animation-delay: 0.36s;
+}
+
+/* Radial ripple CSS animation originating from click coordinates upon interaction */
+@keyframes aura-click-ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.4);
+    opacity: 0;
+  }
+}
+
+#btn-floating-voice-orb::after {
+  content: "";
+  position: absolute;
+  top: var(--ripple-y, 50%);
+  left: var(--ripple-x, 50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, rgba(6, 182, 212, 0.45) 35%, rgba(99, 102, 241, 0.2) 55%, transparent 70%);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 20;
+}
+
+#btn-floating-voice-orb.is-rippling::after,
+#btn-floating-voice-orb:active::after {
+  animation: aura-click-ripple 0.6s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+}
+
+/* Print Styles for PDF / Invoice Export */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  #aura-sidebar,
+  #aura-topbar,
+  .no-print,
+  button,
+  .no-print-element {
+    display: none !important;
+  }
+
+  #printable-invoice-modal {
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+    overflow: visible !important;
+    inset: auto !important;
+  }
+
+  #printable-invoice-card {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    padding: 32px !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  #printable-invoice-card * {
+    color: #1e293b !important;
+    text-shadow: none !important;
+  }
+
+  #printable-invoice-card .text-white {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+  }
+
+  #printable-invoice-card .text-gray-300,
+  #printable-invoice-card .text-gray-400 {
+    color: #475569 !important;
+  }
+
+  #printable-invoice-card .text-emerald-400,
+  #printable-invoice-card .text-emerald-300 {
+    color: #047857 !important;
+    font-weight: 700 !important;
+  }
+
+  #printable-invoice-card .bg-[#080B14],
+  #printable-invoice-card .bg-white\/5 {
+    background: #f8fafc !important;
+    border-color: #e2e8f0 !important;
+  }
+
+  #printable-invoice-card table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  #printable-invoice-card th {
+    background: #f1f5f9 !important;
+    color: #334155 !important;
+    font-weight: 700 !important;
+  }
+
+  #printable-invoice-card td,
+  #printable-invoice-card th {
+    border-bottom: 1px solid #e2e8f0 !important;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none;
+  }
+}
+

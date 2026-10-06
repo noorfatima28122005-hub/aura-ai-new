@@ -1,0 +1,421 @@
+{
+  "usr_workingbynoor_gmail_com": {
+    "clients": [],
+    "projects": [],
+    "tasks": [],
+    "invoices": [],
+    "approvals": [],
+    "automations": [],
+    "activityLogs": [],
+    "connectedAccounts": [
+      {
+        "id": "conn_fiverr",
+        "provider": "fiverr",
+        "name": "Fiverr Pro Workspace",
+        "category": "commerce",
+        "accountIdentifier": "fiverr.com/auradev",
+        "connectedAt": "2026-09-01",
+        "lastSync": "12 minutes ago",
+        "lastSyncDuration": "1.1s",
+        "status": "connected",
+        "connectionHealth": "Healthy",
+        "syncStatus": "Completed",
+        "syncMessage": "Successfully synchronized 2 active orders and 1 unread buyer message.",
+        "capabilities": [
+          "VIEW_ACTIVE_ORDERS",
+          "SYNC_BUYER_MESSAGES",
+          "DELIVERABLE_TIMELINES"
+        ],
+        "permissions": [
+          "Read Active Orders",
+          "Synchronize Buyer Messages",
+          "Deliverable Timelines"
+        ],
+        "allAvailablePermissions": [
+          "Read Active Orders",
+          "Synchronize Buyer Messages",
+          "Deliverable Timelines",
+          "Earnings & Payout Telemetry",
+          "Gig Reviews & Inquiries"
+        ],
+        "dataCategories": [
+          "Active Orders",
+          "Buyer Messages",
+          "Gig Inquiries"
+        ],
+        "icon": "fiverr",
+        "dataStats": {
+          "activeOrders": 2,
+          "unreadMessages": 1,
+          "totalSyncedRecords": 3
+        },
+        "syncHistory": [
+          {
+            "id": "sync_fiv_1",
+            "timestamp": "2026-09-12 04:15:00",
+            "durationMs": 1120,
+            "status": "Completed",
+            "recordsProcessed": 3,
+            "recordsAdded": 0,
+            "recordsUpdated": 3,
+            "recordsSkipped": 0,
+            "message": "Synced 2 active orders and 1 buyer communication thread."
+          }
+        ]
+      },
+      {
+        "id": "conn_gmail",
+        "provider": "gmail",
+        "name": "Google Workspace (Gmail)",
+        "category": "email",
+        "accountIdentifier": "workingbynoor@gmail.com",
+        "connectedAt": "2026-09-03",
+        "lastSync": "Just now",
+        "lastSyncDuration": "350ms",
+        "status": "connected",
+        "connectionHealth": "Healthy",
+        "syncStatus": "Completed",
+        "syncMessage": "Successfully synchronized 46 messages and client threads.",
+        "capabilities": [
+          "VIEW_MESSAGES",
+          "EXTRACT_DEADLINES",
+          "DRAFT_FOLLOWUPS",
+          "MATCH_CLIENTS"
+        ],
+        "permissions": [
+          "Client Message Context",
+          "Deadline Extraction"
+        ],
+        "allAvailablePermissions": [
+          "Client Message Context",
+          "Deadline Extraction",
+          "Draft Follow-ups",
+          "Contact Directory Matching",
+          "Attachment Meta Parsing"
+        ],
+        "dataCategories": [
+          "Email Threads",
+          "Sender Context",
+          "Milestone Dates"
+        ],
+        "icon": "gmail",
+        "dataStats": {
+          "analyzedEmails": 46,
+          "totalSyncedRecords": 46
+        },
+        "syncHistory": [
+          {
+            "id": "perm_1790180302988",
+            "timestamp": "2026-09-23 16:18:22",
+            "durationMs": 180,
+            "status": "Completed",
+            "recordsProcessed": 0,
+            "recordsAdded": 0,
+            "recordsUpdated": 0,
+            "recordsSkipped": 0,
+            "message": "Permissions updated: Client Message Context, Deadline Extraction"
+          },
+          {
+            "id": "sync_1790180295452",
+            "timestamp": "2026-09-23 16:18:15",
+            "durationMs": 350,
+            "status": "Completed",
+            "recordsProcessed": 46,
+            "recordsAdded": 0,
+            "recordsUpdated": 46,
+            "recordsSkipped": 0,
+            "message": "Successfully synchronized 46 messages and client threads."
+          },
+          {
+            "id": "sync_gm_1",
+            "timestamp": "2026-09-12 04:25:00",
+            "durationMs": 780,
+            "status": "Completed",
+            "recordsProcessed": 46,
+            "recordsAdded": 2,
+            "recordsUpdated": 44,
+            "recordsSkipped": 0,
+            "message": "Synchronized latest inbound inquiries and extracted deadline milestones."
+          }
+        ]
+      },
+      {
+        "id": "conn_outlook",
+        "provider": "outlook",
+        "name": "Microsoft Outlook Enterprise",
+        "category": "email",
+        "accountIdentifier": "corporate@aura-ops.io",
+        "connectedAt": "Not connected",
+        "lastSync": "Never",
+        "status": "disconnected",
+        "connectionHealth": "Disconnected",
+        "syncStatus": "Never Synced",
+        "syncMessage": "No synchronized data yet.",
+        "capabilities": [
+          "VIEW_EXECUTIVE_MAIL",
+          "SYNC_CALENDAR_INVITES"
+        ],
+        "permissions": [
+          "Executive Mail Context",
+          "Calendar Invites"
+        ],
+        "allAvailablePermissions": [
+          "Executive Mail Context",
+          "Calendar Invites",
+          "Meeting Transcripts",
+          "Shared Inbox Signals"
+        ],
+        "dataCategories": [
+          "Corporate Inboxes",
+          "Meeting Invites"
+        ],
+        "icon": "outlook",
+        "dataStats": {
+          "analyzedEmails": 0,
+          "totalSyncedRecords": 0
+        },
+        "syncHistory": []
+      },
+      {
+        "id": "conn_gcal",
+        "provider": "gcal",
+        "name": "Google Calendar Enterprise",
+        "category": "calendar",
+        "accountIdentifier": "founder@lumina.io",
+        "connectedAt": "2026-09-23",
+        "lastSync": "Just now",
+        "status": "disconnected",
+        "connectionHealth": "Disconnected",
+        "syncStatus": "Never Synced",
+        "syncMessage": "Integration disconnected. Stored OAuth tokens purged. Existing business records preserved.",
+        "capabilities": [
+          "VIEW_EVENTS",
+          "CREATE_EVENTS",
+          "UPDATE_EVENTS"
+        ],
+        "permissions": [
+          "Read Calendar Events",
+          "Add Milestone Deadlines"
+        ],
+        "allAvailablePermissions": [
+          "Read Calendar Events",
+          "Add Milestone Deadlines",
+          "Schedule Client Reviews"
+        ],
+        "dataCategories": [
+          "Meeting Events",
+          "Project Milestones"
+        ],
+        "icon": "gcal",
+        "dataStats": {
+          "totalSyncedRecords": 0
+        },
+        "syncHistory": [
+          {
+            "id": "disc_1790180300900",
+            "timestamp": "2026-09-23 16:18:20",
+            "durationMs": 120,
+            "status": "Completed",
+            "recordsProcessed": 0,
+            "recordsAdded": 0,
+            "recordsUpdated": 0,
+            "recordsSkipped": 0,
+            "message": "OAuth session revoked and tokens purged from secure storage. Business records preserved."
+          },
+          {
+            "id": "sync_1790180298310",
+            "timestamp": "2026-09-23 16:18:18",
+            "durationMs": 650,
+            "status": "Completed",
+            "recordsProcessed": 5,
+            "recordsAdded": 0,
+            "recordsUpdated": 5,
+            "recordsSkipped": 0,
+            "message": "Authorization verified via OAuth 2.0 PKCE. Connection established."
+          }
+        ],
+        "lastSyncDuration": "650ms"
+      },
+      {
+        "id": "conn_gdrive",
+        "provider": "gdrive",
+        "name": "Google Drive Vault",
+        "category": "storage",
+        "accountIdentifier": "drive.google.com/auravault",
+        "connectedAt": "Not connected",
+        "lastSync": "Never",
+        "status": "disconnected",
+        "connectionHealth": "Disconnected",
+        "syncStatus": "Never Synced",
+        "syncMessage": "Ready for document archiving.",
+        "capabilities": [
+          "VIEW_DOCUMENTS",
+          "SYNC_ATTACHMENTS"
+        ],
+        "permissions": [
+          "Read Workspace Drive Assets",
+          "Archive Delivery Files"
+        ],
+        "allAvailablePermissions": [
+          "Read Workspace Drive Assets",
+          "Archive Delivery Files",
+          "Client File Sharing"
+        ],
+        "dataCategories": [
+          "Client Assets",
+          "Signed Contracts",
+          "Deliverables"
+        ],
+        "icon": "gdrive",
+        "dataStats": {
+          "totalSyncedRecords": 0
+        },
+        "syncHistory": []
+      },
+      {
+        "id": "conn_github",
+        "provider": "github",
+        "name": "GitHub Dev Ops",
+        "category": "development",
+        "accountIdentifier": "github.com/aura-system",
+        "connectedAt": "Not connected",
+        "lastSync": "Never",
+        "status": "disconnected",
+        "connectionHealth": "Disconnected",
+        "syncStatus": "Never Synced",
+        "syncMessage": "Ready for repository synchronization.",
+        "capabilities": [
+          "READ_REPOSITORIES",
+          "VIEW_ISSUES",
+          "TRACK_COMMITS"
+        ],
+        "permissions": [
+          "Repository Metadata",
+          "Issue Tracking"
+        ],
+        "allAvailablePermissions": [
+          "Repository Metadata",
+          "Issue Tracking",
+          "Commit Activity",
+          "Pull Request Signals"
+        ],
+        "dataCategories": [
+          "Repositories",
+          "Issues",
+          "Commits"
+        ],
+        "icon": "github",
+        "dataStats": {
+          "totalSyncedRecords": 0
+        },
+        "syncHistory": []
+      },
+      {
+        "id": "conn_stripe",
+        "provider": "stripe",
+        "name": "Stripe Billing & Invoicing",
+        "category": "business",
+        "accountIdentifier": "Not configured",
+        "connectedAt": "Not configured",
+        "lastSync": "Never",
+        "status": "not_configured",
+        "connectionHealth": "Disconnected",
+        "syncStatus": "Never Synced",
+        "syncMessage": "Server API key required.",
+        "requiredConfig": "STRIPE_SECRET_KEY required in server environment.",
+        "capabilities": [
+          "INVOICE_SYNC",
+          "PAYMENT_WEBHOOKS"
+        ],
+        "permissions": [
+          "View Invoices & Payments",
+          "Reconcile Balances"
+        ],
+        "allAvailablePermissions": [
+          "View Invoices & Payments",
+          "Reconcile Balances"
+        ],
+        "dataCategories": [
+          "Invoices",
+          "Payouts",
+          "Subscriptions"
+        ],
+        "icon": "stripe",
+        "dataStats": {
+          "totalSyncedRecords": 0
+        },
+        "syncHistory": []
+      },
+      {
+        "id": "conn_slack",
+        "provider": "slack",
+        "name": "Slack Operations Bot",
+        "category": "communication",
+        "accountIdentifier": "Not configured",
+        "connectedAt": "Not configured",
+        "lastSync": "Never",
+        "status": "not_configured",
+        "connectionHealth": "Disconnected",
+        "syncStatus": "Never Synced",
+        "syncMessage": "Bot token required.",
+        "requiredConfig": "SLACK_BOT_TOKEN required in server environment.",
+        "capabilities": [
+          "CHANNEL_NOTIFICATIONS",
+          "TASK_DISPATCH"
+        ],
+        "permissions": [
+          "Send Channel Webhooks",
+          "Read Mention Alerts"
+        ],
+        "allAvailablePermissions": [
+          "Send Channel Webhooks",
+          "Read Mention Alerts"
+        ],
+        "dataCategories": [
+          "Channel Notifications",
+          "Alerts"
+        ],
+        "icon": "slack",
+        "dataStats": {
+          "totalSyncedRecords": 0
+        },
+        "syncHistory": []
+      },
+      {
+        "id": "conn_notion",
+        "provider": "notion",
+        "name": "Notion Knowledge Base",
+        "category": "productivity",
+        "accountIdentifier": "Not configured",
+        "connectedAt": "Not configured",
+        "lastSync": "Never",
+        "status": "not_configured",
+        "connectionHealth": "Disconnected",
+        "syncStatus": "Never Synced",
+        "syncMessage": "Integration token required.",
+        "requiredConfig": "NOTION_API_KEY required in server environment.",
+        "capabilities": [
+          "READ_PAGES",
+          "SYNC_DATABASES"
+        ],
+        "permissions": [
+          "Read Workspace Pages",
+          "Database Indexing"
+        ],
+        "allAvailablePermissions": [
+          "Read Workspace Pages",
+          "Database Indexing"
+        ],
+        "dataCategories": [
+          "Pages",
+          "Databases"
+        ],
+        "icon": "notion",
+        "dataStats": {
+          "totalSyncedRecords": 0
+        },
+        "syncHistory": []
+      }
+    ]
+  }
+}

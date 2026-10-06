@@ -1,0 +1,9 @@
+{
+  "name": "AURA AI",
+  "description": "Intelligent Freelance & Business Workspace for managing clients, projects, tasks, cashflow, communication, knowledge, and AI workflows.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
